@@ -1,0 +1,7 @@
+---
+
+- name: Git checkout
+  git:
+    repo: 'https://github.com/wodby/docker4drupal.git'
+    dest: '/home/{{ansible_user}}/.uni/paas/docker4drupal'
+    version: 5.4.28
