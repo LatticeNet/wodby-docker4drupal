@@ -5,3 +5,8 @@
     repo: 'https://github.com/wodby/docker4drupal.git'
     dest: '/home/{{ansible_user}}/.uni/paas/docker4drupal'
     version: 5.4.28
+
+- name: Run `docker-compose up` again
+  docker_compose:
+    project_src: '/home/{{ansible_user}}/.uni/paas/docker4drupal'
+  register: output
